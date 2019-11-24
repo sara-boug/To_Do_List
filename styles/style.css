@@ -1,0 +1,89 @@
+body{
+
+ background-image:url('fruit_background.jpg');
+ background-size:100% cover;
+ background-repeat: no-repeat;
+ -webkit-background-size:cover;
+ text-align: center;
+
+}
+
+.container{
+  position: absolute;
+   display:flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  left: 50%;
+  background-color:rgba(245, 209, 216, 0.9);
+   /*background-color: #7d9791;
+    background-color:rgba(124, 150, 146, 0.9);*/
+  width: 60%;
+transform: translate(-50%, 0);
+padding-bottom: 10px;
+padding-top: 10px;
+ }
+ form {
+   display: flex;
+    align-items: center;
+    justify-content: center;
+height: 70px;
+width:  90%;
+
+ }
+
+*{
+outline: none;
+border:none;
+font-family: 'Sofia';
+border-radius: 7px;
+
+}
+input  {
+  height: inherit;
+   width: 90%;
+ font-size: 15px;
+ text-align: center;
+
+border-radius:7px 0px 0px 7px;
+color: #55595c;
+ }
+button{
+    height: inherit;
+  width:10%;
+border-radius:0px 7px 7px 0px;
+ background-color: #e95549;
+ color: white;
+font-size: 15px;
+
+}
+button:hover{
+background-color: #ff8673;
+cursor: pointer;
+}
+.item{
+  font-size: 18px;
+  width: 88%;
+  height: auto;
+ border: 1px solid #ff8673;
+margin-top: 10px;
+padding: 5px;
+color: #55595c;
+}
+.item  i{
+  position: fixed;
+   right:7%;
+   color: #78938d;
+   font-size: 15px;
+  }
+  .item  i:hover{
+color:#ff8673;
+font-size: 18px;
+cursor: pointer;
+}
+.item:hover{
+text-decoration: line-through;
+ color:gray;
+ cursor:pointer;
+ background:rgba(124, 150, 146, 0.5);
+}
