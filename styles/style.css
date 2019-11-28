@@ -81,9 +81,9 @@ color:#ff8673;
 font-size: 18px;
 cursor: pointer;
 }
-.item:hover{
+.item p:hover{
 text-decoration: line-through;
  color:gray;
  cursor:pointer;
- background:rgba(124, 150, 146, 0.5);
+color:rgba(124, 150, 146, 0.5);
 }

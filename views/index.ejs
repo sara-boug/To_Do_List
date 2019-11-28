@@ -18,13 +18,16 @@ placeholder="write something....." required/>
 <button type="submit">Add <i class="fa fa-plus"></i></button>
 </form>
 
-<%= console.log(data) %>
-
+ 
 <% for(var i=0; i< data.length; i++){ %>
 
-<div class="item" id="item"><i class="fa fa-times"></i><%=data[i].item%></div>
+<%  if(data[i].done === false) { %>
+<div class="item" id="item"><i class="fa fa-times"></i><p><%=data[i].item%></p></div>
+ <% }else{%>
 
+<div class="item" id="item" ><i class="fa fa-times"></i><p style='text-decoration: line-through;'><%=data[i].item%></p></div>
 
+   <% } %>
  <%}%>
 
 
