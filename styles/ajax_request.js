@@ -29,12 +29,14 @@ location.reload();
 });
 
 $('.item p').click(function(){
-var item=$(this).text().replace(' ','-');
+
+ var item=$(this).text().replace(' ','-');
+
  $.ajax({
 type:'PUT',
 url:'/todo/'+item,
 success:function(data){
-  //alert(data);
+  alert(data);
 location.reload();
 }
 });

@@ -10,22 +10,24 @@
   </head>
   <body>
       <div  class="container">
+
+        <h1>Todo List... <i class="fa fa-pencil"></i></h1> 
   <!--do not add method="Post" else there would be data duplication-->
  <form>
 
 <input type="text"  name="item"
 placeholder="write something....." required/>
-<button type="submit">Add <i class="fa fa-plus"></i></button>
+<button type="submit"> <i class="fa fa-plus"></i></button>
 </form>
 
- 
+
 <% for(var i=0; i< data.length; i++){ %>
 
 <%  if(data[i].done === false) { %>
 <div class="item" id="item"><i class="fa fa-times"></i><p><%=data[i].item%></p></div>
  <% }else{%>
 
-<div class="item" id="item" ><i class="fa fa-times"></i><p style='text-decoration: line-through;'><%=data[i].item%></p></div>
+<div class="item" id="item" ><i class="fa fa-times"></i><p style='text-decoration: line-through; color:gray;'><%=data[i].item%></p></div>
 
    <% } %>
  <%}%>
